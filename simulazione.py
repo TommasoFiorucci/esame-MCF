@@ -279,8 +279,8 @@ def main():
         iniziali, pstart, dei parametri in alcuni casi sono troppo lontani
         dai valori reali
         '''
-        mask_x = (amp_x < 700) & (amp_x > 200)
-        mask_y = (amp_y < 700) & (amp_y > 200)
+        mask_x = (amp_x < 0.07*N) & (amp_x > 0.02*N)
+        mask_y = (amp_y < 0.07*N) & (amp_y > 0.02*N)
         
         #disegnamo il grafico delle sigma in funzione dell'energia
         
